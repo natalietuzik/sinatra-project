@@ -8,7 +8,7 @@ get("/") do
 end
 
 get("/food_form") do
-  erb(:food_form)
+  erb(:food)
 end
 
 get("/get_foods") do
