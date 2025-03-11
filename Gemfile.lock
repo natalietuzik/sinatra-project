@@ -192,6 +192,7 @@ DEPENDENCIES
   grade_runner
   http
   i18n
+  json
   pry
   puma (~> 5.0)
   rspec

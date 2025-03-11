@@ -1,12 +1,68 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra Template</title>
+    <title>Find a Recipe!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:rgb(132, 221, 248);
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .recipe {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .recipe img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .recipe h2 {
+        color: #333;
+      }
+
+      .recipe ul {
+        list-style-type: circle;
+        padding-inline-start: 20px;
+      }
+
+      .recipe ul li {
+        margin-bottom: 5px;
+      }
+
+      .recipe h3 {
+        color: #555;
+      }
+
+      ol{
+        padding-inline-start:20px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          width: 90%;
+        }
+      }
+  </style>
+  </head> 
 
   <body>
-    <%= yield %>
+    <div class="container">
+        <%= yield %>
+    </div>
   </body>
 </html>

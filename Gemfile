@@ -13,6 +13,7 @@ gem "puma", "~> 5.0"
 gem "sinatra-activerecord"
 
 gem "http"
+gem "json"
 gem "dotenv"
 
 group :development do

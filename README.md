@@ -1,18 +1,16 @@
-# sinatra-template
+# Random Recipe Generator
 
-Use this repository to create new Sinatra apps. 
+## Description
+I used the spoonacular API to create a random recipe generator. When ran, the app provides the user with a photo, title, and full recipe 
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+## Prerequisites
 
-```ruby
-require "sinatra/activerecord"
-```
+Before you run the app, make sure you have installed:
 
-And in the `config/environment.rb` file add this code block:
+- Ruby
+- Bundler (`gem install bundler`)
+- [Spoonacular API](https://spoonacular.com/food-api) Key (register for free to obtain an API key)
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+## Usage
+
+To run the app, type "ruby app.rb" in the terminal
