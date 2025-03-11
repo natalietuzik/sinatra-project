@@ -1,0 +1,16 @@
+
+<h1> Recipe for <%=@title%></h1>
+
+<img src="<%=@img_url%>">
+
+<ol>
+    <% @steps.each do |steps| %>
+      <li>
+        <%= steps['step'] %>
+      </li>
+    <% end %>
+  </ol>
+
+
+
+<a href="/food_form">Let's find other foods!</a>
